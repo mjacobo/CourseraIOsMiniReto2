@@ -1,0 +1,1056 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4Yt-K4-aLQ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CCAppIOsPizzaMJR" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza" translatesAutoresizingMaskIntoConstraints="NO" id="MA6-cP-1Wo">
+                                <rect key="frame" x="206" y="80" width="188" height="141"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="188" id="JKh-Dt-vUY"/>
+                                    <constraint firstAttribute="height" constant="141" id="m7y-rL-Lrl"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="-9" translatesAutoresizingMaskIntoConstraints="NO" id="4Gc-IQ-oyi">
+                                <rect key="frame" x="98" y="260" width="405" height="29"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a7c-aS-IS2">
+                                        <rect key="frame" x="0.0" y="0.0" width="108" height="29"/>
+                                        <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" backgroundImage="Button-1b - No">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Tamaño">
+                                                    <attributes>
+                                                        <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <font key="NSFont" size="18" name="HelveticaNeue-BoldItalic"/>
+                                                        <font key="NSOriginalFont" size="18" name="HelveticaNeue-BoldItalic"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Pgh-c8-PwZ" kind="show" identifier="SegueTamano" id="jjG-zE-Qlj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pwf-Re-kyb">
+                                        <rect key="frame" x="99" y="0.0" width="108" height="29"/>
+                                        <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" backgroundImage="Button-2b - No">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Masa">
+                                                    <attributes>
+                                                        <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <font key="NSFont" size="18" name="HelveticaNeue-BoldItalic"/>
+                                                        <font key="NSOriginalFont" size="18" name="HelveticaNeue-BoldItalic"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <segue destination="S4i-UB-lol" kind="show" identifier="SegueMasa" id="mPH-DT-SWX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TSv-91-m7C">
+                                        <rect key="frame" x="198" y="0.0" width="108" height="29"/>
+                                        <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" backgroundImage="Button-3b - No">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Queso">
+                                                    <attributes>
+                                                        <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <font key="NSFont" size="18" name="HelveticaNeue-BoldItalic"/>
+                                                        <font key="NSOriginalFont" size="18" name="HelveticaNeue-BoldItalic"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <segue destination="nW8-IW-gul" kind="show" identifier="SegueQueso" id="bfA-rm-TQy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y8p-E3-0Yl">
+                                        <rect key="frame" x="297" y="0.0" width="108" height="29"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <inset key="contentEdgeInsets" minX="22" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" backgroundImage="Button-4b - No">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Adicional">
+                                                    <attributes>
+                                                        <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <font key="NSFont" size="18" name="HelveticaNeue-BoldItalic"/>
+                                                        <font key="NSOriginalFont" size="18" name="HelveticaNeue-BoldItalic"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <segue destination="4uI-7W-HlA" kind="show" identifier="SegueIngredientes" id="owf-8S-jdF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jYC-lY-oNM">
+                                <rect key="frame" x="246" y="316" width="108" height="29"/>
+                                <inset key="contentEdgeInsets" minX="22" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" backgroundImage="Button-5b - No">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Cocinar">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <font key="NSFont" size="18" name="HelveticaNeue-BoldItalic"/>
+                                                <font key="NSOriginalFont" size="18" name="HelveticaNeue-BoldItalic"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="SelPizzaCocinar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7wa-TO-zmY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qW8-0F-pw2">
+                                <rect key="frame" x="98" y="358" width="93" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="93" id="pw5-Ki-Ad1"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Su orden:">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8a1-qo-D5m">
+                                <rect key="frame" x="98" y="387" width="74" height="80"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kWK-8L-bbw">
+                                        <rect key="frame" x="0.0" y="0.0" width="69" height="80"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5g-Ta-6cF">
+                                                <rect key="frame" x="0.0" y="0.0" width="69" height="20"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Tamaño: ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="17" name="HelveticaNeue-Italic"/>
+                                                            <font key="NSOriginalFont" size="17" name="HelveticaNeue-Italic"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IoC-tA-jXA">
+                                                <rect key="frame" x="0.0" y="20" width="69" height="20"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Masa: ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="17" name="HelveticaNeue-Italic"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNf-7E-noc">
+                                                <rect key="frame" x="0.0" y="40" width="69" height="20"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Queso:">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="17" name="HelveticaNeue-Italic"/>
+                                                            <font key="NSOriginalFont" size="17" name="HelveticaNeue-Italic"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gL9-mP-Pvz">
+                                                <rect key="frame" x="0.0" y="60" width="69" height="20"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Ingr">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="17" name="HelveticaNeue-Italic"/>
+                                                            <font key="NSOriginalFont" size="17" name="HelveticaNeue-Italic"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="ed.">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="17" name="HelveticaNeue-Italic"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=": ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="17" name="HelveticaNeue-Italic"/>
+                                                            <font key="NSOriginalFont" size="17" name="HelveticaNeue-Italic"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CVZ-on-dAU">
+                                        <rect key="frame" x="69" y="0.0" width="5" height="80"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7H-lB-zkQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="5" height="21"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="17" name="HelveticaNeue-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUl-Z9-Gps">
+                                                <rect key="frame" x="0.0" y="21" width="5" height="21"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="17" name="HelveticaNeue-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keY-dB-3L4">
+                                                <rect key="frame" x="0.0" y="42" width="5" height="21"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="17" name="HelveticaNeue-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pmg-fC-OTU">
+                                                <rect key="frame" x="0.0" y="63" width="5" height="17"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
+                                                            <font key="NSOriginalFont" size="12" name="HelveticaNeue-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jYC-lY-oNM" firstAttribute="top" secondItem="4Gc-IQ-oyi" secondAttribute="bottom" constant="27" id="DRl-lY-6Yh"/>
+                            <constraint firstItem="8a1-qo-D5m" firstAttribute="leading" secondItem="qW8-0F-pw2" secondAttribute="leading" id="DbV-BS-4ht"/>
+                            <constraint firstItem="8a1-qo-D5m" firstAttribute="top" secondItem="qW8-0F-pw2" secondAttribute="bottom" constant="8" symbolic="YES" id="E2u-G0-09S"/>
+                            <constraint firstItem="MA6-cP-1Wo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jh1-Ea-s9O"/>
+                            <constraint firstItem="qW8-0F-pw2" firstAttribute="leading" secondItem="4Gc-IQ-oyi" secondAttribute="leading" id="QZG-aD-5XD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qW8-0F-pw2" secondAttribute="bottom" constant="221" id="YbH-JB-YRg"/>
+                            <constraint firstItem="MA6-cP-1Wo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="bcc-Pm-Bug"/>
+                            <constraint firstItem="jYC-lY-oNM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="khB-nq-FYU"/>
+                            <constraint firstItem="4Gc-IQ-oyi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="0.5" id="x3x-1l-Iln"/>
+                            <constraint firstItem="qW8-0F-pw2" firstAttribute="top" secondItem="4Gc-IQ-oyi" secondAttribute="bottom" constant="69" id="z4W-Pd-iqD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VPH-30-9ky"/>
+                    <connections>
+                        <outlet property="labelPizzaIngredientes" destination="Pmg-fC-OTU" id="PtJ-Kk-265"/>
+                        <outlet property="labelPizzaMasa" destination="eUl-Z9-Gps" id="vaF-qG-paB"/>
+                        <outlet property="labelPizzaQueso" destination="keY-dB-3L4" id="Ahc-Sj-g03"/>
+                        <outlet property="labelPizzaTamano" destination="l7H-lB-zkQ" id="2PT-HE-L6g"/>
+                        <outlet property="pizzaIngredientsSelButton" destination="y8p-E3-0Yl" id="mQA-SN-bLb"/>
+                        <outlet property="pizzaMasaSelButton" destination="pwf-Re-kyb" id="oNP-VW-ysY"/>
+                        <outlet property="pizzaQuesoSelButton" destination="TSv-91-m7C" id="NxF-8J-8e7"/>
+                        <outlet property="pizzaTamSelButton" destination="a7c-aS-IS2" id="I0M-3T-GdA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="321"/>
+        </scene>
+        <!--Sel Tamano-->
+        <scene sceneID="Mlb-j9-6mr">
+            <objects>
+                <viewController storyboardIdentifier="VCSelTamano" id="Pgh-c8-PwZ" customClass="VCSelTamano" customModule="CCAppIOsPizzaMJR" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="w0O-UE-ZU1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cvv-Oq-pPy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="X1W-Hp-4aF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hir-uj-GSJ">
+                                <rect key="frame" x="254" y="83" width="92" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="92" id="AgS-jg-mXG"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Tamaño">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="24" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rk3-uo-rn3">
+                                <rect key="frame" x="12" y="125" width="153" height="118"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V9e-cZ-euy">
+                                        <rect key="frame" x="0.0" y="0.0" width="153" height="34"/>
+                                        <state key="normal" image="Pizza-Small">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="  ">
+                                                    <attributes>
+                                                        <font key="NSFont" size="24" name="HelveticaNeue-Bold"/>
+                                                        <font key="NSOriginalFont" size="24" name="HelveticaNeue-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content=" ">
+                                                    <attributes>
+                                                        <font key="NSFont" size="24" name="HelveticaNeue-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="Chica">
+                                                    <attributes>
+                                                        <font key="NSFont" size="24" name="HelveticaNeue-Bold"/>
+                                                        <font key="NSOriginalFont" size="24" name="HelveticaNeue-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <action selector="pizzaSelChica:" destination="Pgh-c8-PwZ" eventType="touchUpInside" id="4rH-ih-yw5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wlm-fN-jWc">
+                                        <rect key="frame" x="0.0" y="34" width="153" height="39"/>
+                                        <state key="normal" image="Pizza-Medium">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content=" Mediana">
+                                                    <attributes>
+                                                        <font key="NSFont" size="24" name="HelveticaNeue-Bold"/>
+                                                        <font key="NSOriginalFont" size="24" name="HelveticaNeue-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <action selector="pizzaSelMediana:" destination="Pgh-c8-PwZ" eventType="touchUpInside" id="NoD-4J-U3Q"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0dl-1W-H2p">
+                                        <rect key="frame" x="0.0" y="73" width="153" height="45"/>
+                                        <state key="normal" image="Pizza-Large">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Grande">
+                                                    <attributes>
+                                                        <font key="NSFont" size="24" name="HelveticaNeue-Bold"/>
+                                                        <font key="NSOriginalFont" size="24" name="HelveticaNeue-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <state key="selected" image="Pizza-Large"/>
+                                        <connections>
+                                            <action selector="pizzaSelGrande:" destination="Pgh-c8-PwZ" eventType="touchUpInside" id="pQL-e7-6CP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="izX-Rc-VxQ">
+                                <rect key="frame" x="231" y="296" width="121" height="22"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgQ-56-lhC">
+                                        <rect key="frame" x="0.0" y="0.0" width="115" height="22"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Su selección:">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                                    <font key="NSOriginalFont" size="18" name="HelveticaNeue-Bold"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaB-fq-79h">
+                                        <rect key="frame" x="115" y="0.0" width="6" height="22"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rk3-uo-rn3" firstAttribute="top" secondItem="w0O-UE-ZU1" secondAttribute="bottom" constant="61" id="NLU-E8-9mC"/>
+                            <constraint firstItem="hir-uj-GSJ" firstAttribute="centerX" secondItem="X1W-Hp-4aF" secondAttribute="centerX" id="aPj-uw-Pi6"/>
+                            <constraint firstItem="hir-uj-GSJ" firstAttribute="top" secondItem="w0O-UE-ZU1" secondAttribute="bottom" constant="19" id="ctb-6y-ziG"/>
+                            <constraint firstItem="izX-Rc-VxQ" firstAttribute="centerX" secondItem="X1W-Hp-4aF" secondAttribute="centerX" constant="-8.5" id="dUP-rP-0gr"/>
+                            <constraint firstItem="rk3-uo-rn3" firstAttribute="leading" secondItem="X1W-Hp-4aF" secondAttribute="leadingMargin" constant="-8" id="nN3-3k-aFD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pizzaSelTama" destination="eaB-fq-79h" id="f27-Iu-PsY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h95-Q7-MoG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1740" y="157"/>
+        </scene>
+        <!--Sel Queso-->
+        <scene sceneID="zua-Wg-cP1">
+            <objects>
+                <viewController id="nW8-IW-gul" customClass="VCSelQueso" customModule="CCAppIOsPizzaMJR" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cqu-pc-3DV"/>
+                        <viewControllerLayoutGuide type="bottom" id="DEj-SK-Dfv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1RD-ug-VC7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PwR-jC-9dA">
+                                <rect key="frame" x="254" y="87" width="92" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Queso">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="24" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="i1J-Rk-HcN">
+                                <rect key="frame" x="20" y="143" width="265" height="329"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VGo-LI-HJv">
+                                        <rect key="frame" x="0.0" y="0.0" width="265" height="84"/>
+                                        <state key="normal" image="Queso-cheddar">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Cheddar">
+                                                    <attributes>
+                                                        <font key="NSFont" size="24" name="HelveticaNeue-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <action selector="SelPizzaCheddar:" destination="nW8-IW-gul" eventType="touchUpInside" id="Exq-TP-ZEk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B0N-1s-H3Q">
+                                        <rect key="frame" x="0.0" y="84" width="265" height="90"/>
+                                        <state key="normal" image="Queso-mozarela">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="   ">
+                                                    <attributes>
+                                                        <font key="NSFont" size="24" name="HelveticaNeue-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="M">
+                                                    <attributes>
+                                                        <font key="NSFont" size="24" name="HelveticaNeue-Bold"/>
+                                                        <font key="NSOriginalFont" size="24" name="HelveticaNeue-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="ozarella">
+                                                    <attributes>
+                                                        <font key="NSFont" size="24" name="HelveticaNeue-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <action selector="SelPizzaMozarella:" destination="nW8-IW-gul" eventType="touchUpInside" id="ftk-52-ALU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yfq-wE-mlO">
+                                        <rect key="frame" x="0.0" y="174" width="265" height="80"/>
+                                        <state key="normal" image="Queso-parmesano">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="    Parmesano">
+                                                    <attributes>
+                                                        <font key="NSFont" size="24" name="HelveticaNeue-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <state key="selected" image="Pizza-Large"/>
+                                        <connections>
+                                            <action selector="SelPizzaParmesano:" destination="nW8-IW-gul" eventType="touchUpInside" id="Kwz-mz-kdW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oKE-aw-OO7">
+                                        <rect key="frame" x="0.0" y="254" width="265" height="75"/>
+                                        <state key="normal" image="Queso-no-queso">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="         No queso">
+                                                    <attributes>
+                                                        <font key="NSFont" size="24" name="HelveticaNeue-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <state key="selected" image="Pizza-Large"/>
+                                        <connections>
+                                            <action selector="SelPizzaNoQueso:" destination="nW8-IW-gul" eventType="touchUpInside" id="qwN-m6-hzs"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vGS-du-66p">
+                                <rect key="frame" x="240" y="499" width="121" height="22"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5X-tA-6vJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="115" height="22"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Su selección:">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                                    <font key="NSOriginalFont" size="18" name="HelveticaNeue-Bold"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Vb-Cq-zFr">
+                                        <rect key="frame" x="115" y="0.0" width="6" height="22"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="i1J-Rk-HcN" firstAttribute="top" secondItem="PwR-jC-9dA" secondAttribute="bottom" constant="35" id="X5o-Q5-3Mo"/>
+                            <constraint firstItem="PwR-jC-9dA" firstAttribute="centerX" secondItem="1RD-ug-VC7" secondAttribute="centerX" id="arN-JD-7Bc"/>
+                            <constraint firstItem="i1J-Rk-HcN" firstAttribute="leading" secondItem="1RD-ug-VC7" secondAttribute="leadingMargin" id="mnE-Or-EHf"/>
+                            <constraint firstItem="vGS-du-66p" firstAttribute="centerX" secondItem="1RD-ug-VC7" secondAttribute="centerX" id="xOl-z9-eSf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="SelQuesoLable" destination="0Vb-Cq-zFr" id="Kwt-54-kQZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Ll-HJ-3ve" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1740" y="1463"/>
+        </scene>
+        <!--Sel Ingredientes-->
+        <scene sceneID="bTG-Ux-Mec">
+            <objects>
+                <viewController id="4uI-7W-HlA" customClass="VCSelIngredientes" customModule="CCAppIOsPizzaMJR" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="txb-E5-4aB"/>
+                        <viewControllerLayoutGuide type="bottom" id="WpS-3p-Q4j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fj9-MV-7fw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dzu-DZ-3B3">
+                                <rect key="frame" x="163" y="135" width="274" height="205"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="naH-15-3Ky">
+                                        <rect key="frame" x="0.0" y="0.0" width="131" height="205"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bz0-dP-jGC">
+                                                <rect key="frame" x="0.0" y="0.0" width="131" height="55"/>
+                                                <state key="normal" image="Ham">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content=" Jamon">
+                                                            <attributes>
+                                                                <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <connections>
+                                                    <action selector="SelPizzaJamon:" destination="4uI-7W-HlA" eventType="touchUpInside" id="Qvd-Vc-wpB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9kt-AA-AJ3">
+                                                <rect key="frame" x="0.0" y="55" width="131" height="50"/>
+                                                <state key="normal" image="pepper">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content=" Pimiento">
+                                                            <attributes>
+                                                                <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                                                <font key="NSOriginalFont" size="18" name="HelveticaNeue-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <state key="selected" image="Pizza-Large"/>
+                                                <connections>
+                                                    <action selector="SelPizzaPimiento:" destination="4uI-7W-HlA" eventType="touchUpInside" id="jxk-CU-i5V"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8cj-FO-kCi">
+                                                <rect key="frame" x="0.0" y="105" width="131" height="50"/>
+                                                <state key="normal" image="turkey">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content=" Pavo">
+                                                            <attributes>
+                                                                <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                                                <font key="NSOriginalFont" size="18" name="HelveticaNeue-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <state key="selected" image="Pizza-Large"/>
+                                                <connections>
+                                                    <action selector="SelPizzaPavo:" destination="4uI-7W-HlA" eventType="touchUpInside" id="22b-Ni-k8d"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fiN-qw-fGl">
+                                                <rect key="frame" x="0.0" y="155" width="131" height="50"/>
+                                                <state key="normal" image="Fruit-Olive-Green-icon">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content=" Aceituna">
+                                                            <attributes>
+                                                                <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                                                <font key="NSOriginalFont" size="18" name="HelveticaNeue-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <state key="selected" image="Pizza-Large"/>
+                                                <connections>
+                                                    <action selector="SelPizzaAceituna:" destination="4uI-7W-HlA" eventType="touchUpInside" id="R1W-2f-jxj"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RV2-Tp-lPg">
+                                        <rect key="frame" x="131" y="0.0" width="143" height="205"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JrE-B0-L8P">
+                                                <rect key="frame" x="0.0" y="0.0" width="143" height="34"/>
+                                                <state key="normal" image="pepperoni">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content=" Pepperoni">
+                                                            <attributes>
+                                                                <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                                                <font key="NSOriginalFont" size="18" name="HelveticaNeue-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <connections>
+                                                    <action selector="SelPizzaPepperoni:" destination="4uI-7W-HlA" eventType="touchUpInside" id="I4X-gI-snJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4aS-iN-3z8">
+                                                <rect key="frame" x="0.0" y="34" width="143" height="50"/>
+                                                <state key="normal" image="sausage-icon">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content=" Salchicha">
+                                                            <attributes>
+                                                                <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                                                <font key="NSOriginalFont" size="18" name="HelveticaNeue-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <state key="selected" image="Pizza-Large"/>
+                                                <connections>
+                                                    <action selector="SelPizzaSalchicha:" destination="4uI-7W-HlA" eventType="touchUpInside" id="waA-34-fQE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gcp-Qh-KAm">
+                                                <rect key="frame" x="0.0" y="84" width="143" height="50"/>
+                                                <state key="normal" image="piña">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content=" Piña">
+                                                            <attributes>
+                                                                <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                                                <font key="NSOriginalFont" size="18" name="HelveticaNeue-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <state key="selected" image="Pizza-Large"/>
+                                                <connections>
+                                                    <action selector="SelPizzaPina:" destination="4uI-7W-HlA" eventType="touchUpInside" id="evJ-gU-egt"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eJx-Ru-i2a">
+                                                <rect key="frame" x="0.0" y="134" width="143" height="21"/>
+                                                <state key="normal" image="anchoa">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content=" Anchoa">
+                                                            <attributes>
+                                                                <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                                                <font key="NSOriginalFont" size="18" name="HelveticaNeue-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <state key="selected" image="Pizza-Large"/>
+                                                <connections>
+                                                    <action selector="SelPizzaAnchoa:" destination="4uI-7W-HlA" eventType="touchUpInside" id="DAV-na-nas"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Sg-dO-Y2E">
+                                                <rect key="frame" x="0.0" y="155" width="143" height="50"/>
+                                                <state key="normal" image="Onion">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content=" Cebolla">
+                                                            <attributes>
+                                                                <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                                                <font key="NSOriginalFont" size="18" name="HelveticaNeue-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <state key="selected" image="Pizza-Large"/>
+                                                <connections>
+                                                    <action selector="SelPizzaCebolla:" destination="4uI-7W-HlA" eventType="touchUpInside" id="hGT-hb-geI"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyC-H0-bS7">
+                                <rect key="frame" x="180" y="87" width="240" height="29"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Ingrediente adicional">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="24" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AAv-eZ-bPZ">
+                                <rect key="frame" x="148" y="377" width="304" height="43"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kC2-oQ-2TT">
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="22"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Su selección">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                                    <font key="NSOriginalFont" size="18" name="HelveticaNeue-Bold"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" (hasta 5 ingredientes)">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=":">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                                    <font key="NSOriginalFont" size="18" name="HelveticaNeue-Bold"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZM-7n-t7d">
+                                        <rect key="frame" x="0.0" y="22" width="304" height="21"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dzu-DZ-3B3" firstAttribute="centerX" secondItem="fj9-MV-7fw" secondAttribute="centerX" id="4HH-Mz-FaP"/>
+                            <constraint firstItem="fyC-H0-bS7" firstAttribute="centerX" secondItem="fj9-MV-7fw" secondAttribute="centerX" id="Avj-zz-Nze"/>
+                            <constraint firstItem="AAv-eZ-bPZ" firstAttribute="centerX" secondItem="fj9-MV-7fw" secondAttribute="centerX" id="Nre-Gi-9J4"/>
+                            <constraint firstItem="AAv-eZ-bPZ" firstAttribute="centerX" secondItem="fj9-MV-7fw" secondAttribute="centerX" id="btx-5u-FuU"/>
+                            <constraint firstItem="AAv-eZ-bPZ" firstAttribute="centerX" secondItem="fj9-MV-7fw" secondAttribute="centerX" id="iAj-6w-iM7"/>
+                            <constraint firstItem="dzu-DZ-3B3" firstAttribute="top" secondItem="fyC-H0-bS7" secondAttribute="bottom" constant="19" id="zyn-hb-rEL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pizzaSelIngre" destination="YZM-7n-t7d" id="V7H-Uh-Pso"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bTL-Gr-wC8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1740" y="2129"/>
+        </scene>
+        <!--Sel Masa-->
+        <scene sceneID="PhI-VS-2LS">
+            <objects>
+                <viewController id="S4i-UB-lol" customClass="VCSelMasa" customModule="CCAppIOsPizzaMJR" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Dq-9I-RiX"/>
+                        <viewControllerLayoutGuide type="bottom" id="vTS-O2-lbp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l2U-b9-U3J">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1X-ek-jp6">
+                                <rect key="frame" x="254" y="95" width="92" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Masa">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="24" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="d9m-Ty-MRx">
+                                <rect key="frame" x="20" y="152" width="332" height="194"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PkR-NH-rHU">
+                                        <rect key="frame" x="0.0" y="0.0" width="332" height="35"/>
+                                        <state key="normal" image="Pizza-Masa-Delgada">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content=" Delgada">
+                                                    <attributes>
+                                                        <font key="NSFont" size="24" name="HelveticaNeue-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <action selector="SelPizzaDelgada:" destination="S4i-UB-lol" eventType="touchUpInside" id="2NW-gi-jI7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rqy-Yo-dfo">
+                                        <rect key="frame" x="0.0" y="35" width="332" height="56"/>
+                                        <state key="normal" image="Pizza-Masa-Media">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content=" Mediana">
+                                                    <attributes>
+                                                        <font key="NSFont" size="24" name="HelveticaNeue-Bold"/>
+                                                        <font key="NSOriginalFont" size="24" name="HelveticaNeue-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <action selector="SelPizzaMediana:" destination="S4i-UB-lol" eventType="touchUpInside" id="us6-gK-Vcj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hbB-29-Z5O">
+                                        <rect key="frame" x="0.0" y="91" width="332" height="103"/>
+                                        <state key="normal" image="Pizza-Masa-Gruesa">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content=" ">
+                                                    <attributes>
+                                                        <font key="NSFont" size="24" name="HelveticaNeue-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="Gr">
+                                                    <attributes>
+                                                        <font key="NSFont" size="24" name="HelveticaNeue-Bold"/>
+                                                        <font key="NSOriginalFont" size="24" name="HelveticaNeue-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="uesa">
+                                                    <attributes>
+                                                        <font key="NSFont" size="24" name="HelveticaNeue-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <state key="selected" image="Pizza-Large"/>
+                                        <connections>
+                                            <action selector="SelPizzaGruesa:" destination="S4i-UB-lol" eventType="touchUpInside" id="Si0-Kz-4iE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xcw-ea-AoO">
+                                <rect key="frame" x="240" y="400" width="121" height="22"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQx-nt-Lsc">
+                                        <rect key="frame" x="0.0" y="0.0" width="115" height="22"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Su selección:">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                                    <font key="NSOriginalFont" size="18" name="HelveticaNeue-Bold"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhP-Bb-5a6">
+                                        <rect key="frame" x="115" y="0.0" width="6" height="22"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="d9m-Ty-MRx" firstAttribute="leading" secondItem="l2U-b9-U3J" secondAttribute="leadingMargin" id="cyG-nu-79V"/>
+                            <constraint firstItem="d9m-Ty-MRx" firstAttribute="top" secondItem="Z1X-ek-jp6" secondAttribute="bottom" constant="36" id="d6O-vi-JXf"/>
+                            <constraint firstItem="xcw-ea-AoO" firstAttribute="centerX" secondItem="l2U-b9-U3J" secondAttribute="centerX" id="eJ7-F9-vu5"/>
+                            <constraint firstItem="Z1X-ek-jp6" firstAttribute="centerX" secondItem="l2U-b9-U3J" secondAttribute="centerX" id="h0c-o8-LaY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="SelMasaButton" destination="LhP-Bb-5a6" id="lee-Y1-x6X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ECq-a0-4sR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1740" y="813"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qLs-dG-LfI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Yt-K4-aLQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="juO-eW-TOg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wUE-E0-oKd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xeB-gg-h1o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26" y="981"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Button-1b - No" width="108" height="29"/>
+        <image name="Button-2b - No" width="108" height="29"/>
+        <image name="Button-3b - No" width="108" height="29"/>
+        <image name="Button-4b - No" width="108" height="29"/>
+        <image name="Button-5b - No" width="108" height="29"/>
+        <image name="Fruit-Olive-Green-icon" width="50" height="50"/>
+        <image name="Ham" width="50" height="50"/>
+        <image name="Onion" width="50" height="50"/>
+        <image name="Pizza-Large" width="54" height="45"/>
+        <image name="Pizza-Masa-Delgada" width="227" height="35"/>
+        <image name="Pizza-Masa-Gruesa" width="227" height="103"/>
+        <image name="Pizza-Masa-Media" width="227" height="56"/>
+        <image name="Pizza-Medium" width="48" height="39"/>
+        <image name="Pizza-Small" width="37" height="34"/>
+        <image name="Queso-cheddar" width="140" height="84"/>
+        <image name="Queso-mozarela" width="116" height="90"/>
+        <image name="Queso-no-queso" width="75" height="75"/>
+        <image name="Queso-parmesano" width="108" height="80"/>
+        <image name="anchoa" width="50" height="14"/>
+        <image name="pepper" width="50" height="50"/>
+        <image name="pepperoni" width="50" height="34"/>
+        <image name="piña" width="50" height="50"/>
+        <image name="pizza" width="94" height="71"/>
+        <image name="sausage-icon" width="50" height="50"/>
+        <image name="turkey" width="50" height="50"/>
+    </resources>
+</document>

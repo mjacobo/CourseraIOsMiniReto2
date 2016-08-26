@@ -1,0 +1,330 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E73779931D6AA45800C7AF63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73779921D6AA45800C7AF63 /* AppDelegate.swift */; };
+		E73779951D6AA45800C7AF63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73779941D6AA45800C7AF63 /* ViewController.swift */; };
+		E73779981D6AA45800C7AF63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E73779961D6AA45800C7AF63 /* Main.storyboard */; };
+		E737799A1D6AA45800C7AF63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E73779991D6AA45800C7AF63 /* Assets.xcassets */; };
+		E737799D1D6AA45800C7AF63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E737799B1D6AA45800C7AF63 /* LaunchScreen.storyboard */; };
+		E73779A51D6BEA6100C7AF63 /* VCSelQueso.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73779A41D6BEA6100C7AF63 /* VCSelQueso.swift */; };
+		E73779A91D6BEB0400C7AF63 /* VCSelTamano.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73779A81D6BEB0400C7AF63 /* VCSelTamano.swift */; };
+		E73779AB1D6BEB3400C7AF63 /* VCSelIngredientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73779AA1D6BEB3400C7AF63 /* VCSelIngredientes.swift */; };
+		E73779AD1D6BEBC600C7AF63 /* VCSelMasa.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73779AC1D6BEBC600C7AF63 /* VCSelMasa.swift */; };
+		E73779AF1D6BEE1000C7AF63 /* pizzaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73779AE1D6BEE1000C7AF63 /* pizzaApp.swift */; };
+		E76541111D6C975500B36B5A /* CommProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76541101D6C975500B36B5A /* CommProtocol.swift */; };
+		E76541131D6CC53D00B36B5A /* SelMasaProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76541121D6CC53D00B36B5A /* SelMasaProtocol.swift */; };
+		E76541151D6CDD9900B36B5A /* SelQuesoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76541141D6CDD9900B36B5A /* SelQuesoProtocol.swift */; };
+		E76541191D6D508500B36B5A /* SelIngredientsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76541181D6D508500B36B5A /* SelIngredientsProtocol.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E737798F1D6AA45800C7AF63 /* CCAppIOsPizzaMJR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCAppIOsPizzaMJR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E73779921D6AA45800C7AF63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E73779941D6AA45800C7AF63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E73779971D6AA45800C7AF63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E73779991D6AA45800C7AF63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E737799C1D6AA45800C7AF63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E737799E1D6AA45800C7AF63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E73779A41D6BEA6100C7AF63 /* VCSelQueso.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCSelQueso.swift; sourceTree = "<group>"; };
+		E73779A81D6BEB0400C7AF63 /* VCSelTamano.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCSelTamano.swift; sourceTree = "<group>"; };
+		E73779AA1D6BEB3400C7AF63 /* VCSelIngredientes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCSelIngredientes.swift; sourceTree = "<group>"; };
+		E73779AC1D6BEBC600C7AF63 /* VCSelMasa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCSelMasa.swift; sourceTree = "<group>"; };
+		E73779AE1D6BEE1000C7AF63 /* pizzaApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pizzaApp.swift; sourceTree = "<group>"; };
+		E76541101D6C975500B36B5A /* CommProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommProtocol.swift; sourceTree = "<group>"; };
+		E76541121D6CC53D00B36B5A /* SelMasaProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelMasaProtocol.swift; sourceTree = "<group>"; };
+		E76541141D6CDD9900B36B5A /* SelQuesoProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelQuesoProtocol.swift; sourceTree = "<group>"; };
+		E76541181D6D508500B36B5A /* SelIngredientsProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelIngredientsProtocol.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E737798C1D6AA45800C7AF63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E73779861D6AA45800C7AF63 = {
+			isa = PBXGroup;
+			children = (
+				E73779911D6AA45800C7AF63 /* CCAppIOsPizzaMJR */,
+				E73779901D6AA45800C7AF63 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E73779901D6AA45800C7AF63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E737798F1D6AA45800C7AF63 /* CCAppIOsPizzaMJR.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E73779911D6AA45800C7AF63 /* CCAppIOsPizzaMJR */ = {
+			isa = PBXGroup;
+			children = (
+				E73779921D6AA45800C7AF63 /* AppDelegate.swift */,
+				E73779941D6AA45800C7AF63 /* ViewController.swift */,
+				E73779961D6AA45800C7AF63 /* Main.storyboard */,
+				E73779A41D6BEA6100C7AF63 /* VCSelQueso.swift */,
+				E73779991D6AA45800C7AF63 /* Assets.xcassets */,
+				E737799B1D6AA45800C7AF63 /* LaunchScreen.storyboard */,
+				E737799E1D6AA45800C7AF63 /* Info.plist */,
+				E73779AC1D6BEBC600C7AF63 /* VCSelMasa.swift */,
+				E73779A81D6BEB0400C7AF63 /* VCSelTamano.swift */,
+				E73779AA1D6BEB3400C7AF63 /* VCSelIngredientes.swift */,
+				E73779AE1D6BEE1000C7AF63 /* pizzaApp.swift */,
+				E76541101D6C975500B36B5A /* CommProtocol.swift */,
+				E76541121D6CC53D00B36B5A /* SelMasaProtocol.swift */,
+				E76541141D6CDD9900B36B5A /* SelQuesoProtocol.swift */,
+				E76541181D6D508500B36B5A /* SelIngredientsProtocol.swift */,
+			);
+			path = CCAppIOsPizzaMJR;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E737798E1D6AA45800C7AF63 /* CCAppIOsPizzaMJR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E73779A11D6AA45800C7AF63 /* Build configuration list for PBXNativeTarget "CCAppIOsPizzaMJR" */;
+			buildPhases = (
+				E737798B1D6AA45800C7AF63 /* Sources */,
+				E737798C1D6AA45800C7AF63 /* Frameworks */,
+				E737798D1D6AA45800C7AF63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CCAppIOsPizzaMJR;
+			productName = CCAppIOsPizzaMJR;
+			productReference = E737798F1D6AA45800C7AF63 /* CCAppIOsPizzaMJR.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E73779871D6AA45800C7AF63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = MJ;
+				TargetAttributes = {
+					E737798E1D6AA45800C7AF63 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = E737798A1D6AA45800C7AF63 /* Build configuration list for PBXProject "CCAppIOsPizzaMJR" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E73779861D6AA45800C7AF63;
+			productRefGroup = E73779901D6AA45800C7AF63 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E737798E1D6AA45800C7AF63 /* CCAppIOsPizzaMJR */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E737798D1D6AA45800C7AF63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E737799D1D6AA45800C7AF63 /* LaunchScreen.storyboard in Resources */,
+				E737799A1D6AA45800C7AF63 /* Assets.xcassets in Resources */,
+				E73779981D6AA45800C7AF63 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E737798B1D6AA45800C7AF63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E76541131D6CC53D00B36B5A /* SelMasaProtocol.swift in Sources */,
+				E76541191D6D508500B36B5A /* SelIngredientsProtocol.swift in Sources */,
+				E73779951D6AA45800C7AF63 /* ViewController.swift in Sources */,
+				E73779AF1D6BEE1000C7AF63 /* pizzaApp.swift in Sources */,
+				E73779AB1D6BEB3400C7AF63 /* VCSelIngredientes.swift in Sources */,
+				E76541111D6C975500B36B5A /* CommProtocol.swift in Sources */,
+				E73779A91D6BEB0400C7AF63 /* VCSelTamano.swift in Sources */,
+				E76541151D6CDD9900B36B5A /* SelQuesoProtocol.swift in Sources */,
+				E73779A51D6BEA6100C7AF63 /* VCSelQueso.swift in Sources */,
+				E73779AD1D6BEBC600C7AF63 /* VCSelMasa.swift in Sources */,
+				E73779931D6AA45800C7AF63 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E73779961D6AA45800C7AF63 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E73779971D6AA45800C7AF63 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E737799B1D6AA45800C7AF63 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E737799C1D6AA45800C7AF63 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E737799F1D6AA45800C7AF63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E73779A01D6AA45800C7AF63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E73779A21D6AA45800C7AF63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CCAppIOsPizzaMJR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mj.CCAppIOsPizzaMJR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E73779A31D6AA45800C7AF63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CCAppIOsPizzaMJR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mj.CCAppIOsPizzaMJR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E737798A1D6AA45800C7AF63 /* Build configuration list for PBXProject "CCAppIOsPizzaMJR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E737799F1D6AA45800C7AF63 /* Debug */,
+				E73779A01D6AA45800C7AF63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E73779A11D6AA45800C7AF63 /* Build configuration list for PBXNativeTarget "CCAppIOsPizzaMJR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E73779A21D6AA45800C7AF63 /* Debug */,
+				E73779A31D6AA45800C7AF63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E73779871D6AA45800C7AF63 /* Project object */;
+}
